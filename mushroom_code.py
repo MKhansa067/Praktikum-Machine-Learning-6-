@@ -9,7 +9,7 @@ from sklearn import tree
 from sklearn.decomposition import PCA
 
 column_names = ['class', 'cap_shape', 'cap_surface', 'cap_color', 'bruises', 'odor', 'gill_attachment', 'gill_spacing', 'gill_size', 'gill_color', 'stalk_shape', 'stalk_root', 'stalk_surface_above_ring', 'stalk_surface_below_ring', 'stalk_color_above_ring', 'stalk_color_below_ring', 'veil_type', 'veil_color', 'ring_number', 'ring_type', 'spore_print_color', 'population', 'habitat']
-mushroom = pd.read_csv('D:/My-Projects/Python/PrakMesin/H6/mushroom/agaricus-lepiota.data', header=None, names=column_names)
+mushroom = pd.read_csv('mushroom/agaricus-lepiota.data', header=None, names=column_names)
 X = mushroom.drop('class', axis=1)  # Fitur
 y = mushroom['class']  # Target
 
